@@ -1,8 +1,18 @@
+
+.profile-photo {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    border-radius: 50%; /* Faz a imagem ficar com bordas arredondadas, se desejado */
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: black;
 }
+
 
 header {
     background-color: #333;
