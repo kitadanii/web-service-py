@@ -1,11 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<a href="#" class="btn btn-success btn-lg">Grande Botão Verde</a>
+<a href="#" class="btn btn-warning btn-sm">Pequeno Botão Amarelo</a>
     <h2>Bem-vindo ao meu portfólio!</h2>
     <p>Sou Henrique Cairño Kitadani, um profissional dedicado e apaixonado por computação. Com 1 ano de experiência em engenharia, desenvolvi habilidades sólidas em python, sempre buscando soluções inovadoras e eficientes para superar desafios. Ao longo da minha carreira, participei de projetos importantes que exigiram foco e esforço, resultando em conhecimento e aprendizado.
 
 Com uma abordagem colaborativa e orientada a resultados, acredito no poder do trabalho em equipe e da comunicação eficaz para entregar valor e qualidade em todos os projetos. Estou constantemente em busca de aprimorar meus conhecimentos, mantendo-me atualizado com as tendências do setor e investindo em meu desenvolvimento profissional.
 
 Estou aberto a novas oportunidades e desafios, sempre com o objetivo de contribuir para o sucesso e crescimento das organizações com as quais colaboro.</p>
+
     <img src="{{ url_for('static', filename='images/eu.jpg') }}" alt="Minha Foto" class="profile-photo">
+<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Endereço de Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputMessage" class="form-label">Mensagem</label>
+    <textarea class="form-control" id="exampleInputMessage" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
 {% endblock %}
